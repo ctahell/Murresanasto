@@ -11,7 +11,7 @@ namespace Murresanasto
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\k1901133\OneDrive - Epedu O365\Olio-ohjelmointi\Suomi-Etelä-Pohjanmaa.csv";
+            string path = @".\Suomi-Etelä-Pohjanmaa.csv";
             
 
             // murresanat
