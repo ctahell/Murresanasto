@@ -12,9 +12,8 @@ namespace Murresanasto
         static void Main(string[] args)
         {
             string path = @".\Suomi-Etelä-Pohjanmaa.csv";
-            
 
-            // murresanat
+          // murresanat
             Dictionary<string, string> murresana = new Dictionary<string, string>();
 
             // tiedon lisääminen dictionaryyn
@@ -23,15 +22,16 @@ namespace Murresanasto
 
             int counter = 0;
             string line = "";
-            
+
 
             // Read the file and display it line by line.  
             System.IO.StreamReader file = new System.IO.StreamReader(path, System.Text.Encoding.GetEncoding("ISO-8859-1"));
             while ((line = file.ReadLine()) != null)
             {
-    
+
                 string[] sanat = line.Split(';');
-                if (!murresana.ContainsKey(sanat[0])) {
+                if (!murresana.ContainsKey(sanat[0]))
+                {
                     murresana.Add(sanat[0], sanat[1]);
                     Console.Write(sanat[0] + "\t" + sanat[1] + "\n");
                 }
